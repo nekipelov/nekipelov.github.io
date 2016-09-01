@@ -1,0 +1,24 @@
+body#cv {
+    margin-left: 50pt;
+    margin-right: 50pt;
+}
+body#cv > h1, h2, h3, h3, h4, h5, h6 {
+    padding-top: 2em;
+}
+
+div#main_block {
+	width: 100%;
+}
+
+div#russian {
+	width: 40%;
+	float: left;
+	display: inline-block;
+	margin: 1em;
+}
+
+div#english {
+	width: 40%;
+	display: inline-block;
+	margin: 1em;
+}
