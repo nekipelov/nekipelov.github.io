@@ -27,7 +27,7 @@ Code example: http://github.com/nekipelov.
 
 ### Mail.Ru Group
 https://corp.mail.ru/en/  
-Senior developer, antispam team  
+Team leader, antispam team  
 October 2015 - till now
 
 Worked on log user actions aggregation system (for offline analysis), look alike Scribe with advanced features. The flow is more than 10 Gb of logs per minute.
