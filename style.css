@@ -2,6 +2,7 @@
     body#cv {
         margin-left: 10pt;
         margin-right: 10pt;
+        font-size: 130%;
     }
     body#cv > h1, h2, h3, h3, h4, h5, h6 {
         padding-top: 2em;
