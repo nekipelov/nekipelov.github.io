@@ -15,51 +15,81 @@
 
 <h3><a id="Objective_5"></a>Objective</h3>
 
-<p>C++ backend application developer for Linux/FreeBSD OS.</p>
+<p>C++/rust backend developer for Linux</p>
 
 <h3><a id="Key_skills_and_competencies_9"></a>Key skills and competencies</h3>
 
-<p>Large project development experience requiring high availability
-and high loading.  Team work experience and experience of team leader.
-Development of server and client applications.</p>
 <ul>
-    <li>Major language: C++</li>
-    <li>Supplementation language: C, ruby, JavaScript, perl.</li>
-    <li>C++ skills: STL, boost, Qt, networks, multithreadings, asynchronous, POSIX API.</li>
+    <li>Major language: C++ and rust</li>
+    <li>Supplementation language: python and ruby.</li>
     <li>Profiling and debugging tools. Source version control system.</li>
-    <li>Databases (MySQL, PostgreSQL, MongoDB, redis, Berkeley DB, tarantool)</li>
-    <li>Hadoop (yarn, hdfs, hbase, zookeeper, Map/Reduce).</li>
-    <li>Transport protocols (http, smtp, pop3, sip).</li>
+    <li>Databases (MySQL, PostgreSQL, MongoDB, redis, tarantool)</li>
     <li>Unit tests, continue integration, code review evangelist.</li>
-    <li>High load, big data, high availability.</li>
-    <li>puppet, graphite</li>
+    <li>Highload, big data, high availability.</li>
+    <li>SRE skills (puppet, ansible)</li>
 </ul>
 
-<p>Code example: <a href="http://github.com/nekipelov">http://github.com/nekipelov</a>.</p>
+<!-- <p>Code example: <a href="http://github.com/nekipelov">http://github.com/nekipelov</a>.</p> -->
 
 <h2><a id="Work_experience_25"></a>Work experience</h2>
+
+
+<h3><a id=""></a>Wildberries</h3>
+
+<p><a href="https://en.wikipedia.org/wiki/Wildberries">https://en.wikipedia.org/wiki/Wildberries</a>
+<br>Team leader, rust team<br>
+April 2020 - now</p>
+
+<p>Created a new team rust and front-end developers. We maked together:</p>
+
+<p>Video surveillance system for more then 10k of cameras.
+It consumes video stream from cameras, writes a video archive
+(several months, as long as there is enough space on servers allocated for storage),
+providing convenient and fast navigation through the archive: selection of any moment
+in time, screenshots on the timeline, fast playback, export part of video for
+incident investigation. Viewing live broadcasts from cameras via webrtc.
+Authentication and access control to cameras and directories.</p>
+
+
+<p>2. We are currently working on an object storage with S3 protocol project.
+Key requirements from management:
+
+<ul>
+    <li>Can be stored 2 billion objects</li>
+    <li>Ease of operation.</li>
+    <li>Scalability. The amount of data is growing at a rapid pace all the time.</li>
+    <li>Complete data consistency, we agreed to use the raft algorithm.</li>
+    <li>Fault tolerance with multiple data center. Every minute of downtime
+        will result in a loss of money.</li>
+    <li>At the moment, the repository is at the stage of test implementation.</li>
+</ul>
+</p>
+
+<p>Technologies used: rust (almost all components are written in this language),
+C++ (not much, only part of the video surveillance system that works
+directly with video, rtsp and webrtc), clickhouse, postgresql, rtsp, webrtc.
+<br /> Platform: Linux
+</p>
 
 <h3><a id="MailRu_Group_27"></a>Mail.Ru Group</h3>
 
 <p><a href="https://corp.mail.ru/en/">https://corp.mail.ru/en/</a>
 <br>Team leader, antispam team<br>
-October 2015 - till now</p>
+October 2015 - April 2020</p>
 
-<p>Worked on log user actions aggregation system (for offline analysis), looks 
+<p>Worked on the log user actions aggregation system (for offline analysis), looks 
 alike Scribe with advanced features. The flow is more than 10 Gb of logs per minute.</p>
 
-<p>Worked on an user behavior statisctics aggregation system (for real-time
-service use). The system aggregated and provided on each: user action, IP address,
-domain, sender/receiver information.</p>
+<p>Worked on the user behavior statisctics aggregation system (for real-time
+service use). The system aggregated and provided information on each: user action, IP address,
+domain, sender/receiver. More then 1 000 000 request per minute.</p>
 
-<p>Worked on an antispam service. The service is the client/server
+<p>Worked on the antispam service. The service is the client/server
 application wich receives messages from client for spam/not spam
 analysis with the help of business logic, which was coded in Lua by
-antispam-analysts. It serves the Mail, My World (social network),
-Mail Agent (IM and VoIP) and ICQ. Message flow is the tens of thousands
-of messages per second.</p>
-
-<p>Interviewed candidates.</p>
+antispam-analysts. It serves the Mail.ru (the largest mail service in Russia),
+My World (social network), Mail Agent (IM and VoIP) and ICQ messenger.
+Message flow is 50-100k  messages per second.</p>
 
 <p>Technologies: Linux, C++, memcached, tarantool, MySQL, lua, hadoop, hdfs, hypertable, riak</p>
 
@@ -79,8 +109,6 @@ for the search system Sputnik.</p>
 
 <p>Within a year: team leader of the distributed ranking algorithm project
 (Page Rank) on the web graph. And search widgets project.</p>
-
-<p>Interviewed candidates.</p>
 
 <p>Technologies: Linux, C++, redis, PostgreSQL, Map/Reduce, hadoop, hbase, hdfs, zookeeper.</p>
 
